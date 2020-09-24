@@ -1,0 +1,128 @@
+* {
+  scroll-behavior: smooth;
+  transition: 0.3s all;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+    outline: none !important;
+}
+
+  input, input:before, input:after {
+      -webkit-user-select: initial;
+      -khtml-user-select: initial;
+      -moz-user-select: initial;
+      -ms-user-select: initial;
+      user-select: initial;
+     } 
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+    background: linear-gradient(270deg, #38427d, #6d387d, #7d3844);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+.glowin {
+    box-shadow: 0 0 20px #0003 !important;
+}
+
+.gradbutton {
+    border: 0 !important;
+    background-color: #002878;
+    background-image: linear-gradient(45deg, #009CFF 0%, #00F0F4 50%, #009CFF 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: white;
+    border-radius: 50px;
+    padding: 12px 48px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 3px;
+    margin-left: 3px;
+    box-shadow: 0 0 32px 0 rgba(0, 40, 120, .35);
+    transition: all 0.5s ease;
+}
+
+.form-control {
+    border: 0px solid #ced4da !important;
+    border-radius: 15px !important;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-control {
+  color: #b4b4b4;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  border: 0;
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+  color: #b4b4b4;
+}
+.form-signin input[type="text"] {
+  border: 0;
+  margin-bottom: 10px;
+}
+.form-signin input[type="password"] {
+  border: 0;
+  margin-bottom: 10px;
+}
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }

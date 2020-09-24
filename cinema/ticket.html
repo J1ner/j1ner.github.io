@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script type="text/javascript" src="js/slick.min.js"></script>
+		<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+		<script type="text/javascript" src="js/pages.js"></script>
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Oswald:400,600&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<link rel="shortcut icon" type="image/png" href="img/fav-icon.png">
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta property="og:title" content="Ваш личный кинотеатр - Anti-Kino.Ru">
+		<meta property="og:description" content="Аренда залов для отдыха,антикинотеатр.">
+		<meta property="og:image" content="img/meta.jpg">
+		<meta property="og:type" content="website">
+		<meta property="og:locale" content="ru_RU"/>
+
+		<meta name="keywords" content="platformavr, platforma vr, платформа вр, платформа квесты, квесты в виртуальной реальности, квесты vr, виртуальная реальность">
+		<meta name="description" content="Кинотеатр нового поколения - Сеть антикинотеатров по всей России.Всё для Вас и Вашей второй половинки.Приватность, комфортный отдых, большой выбор фильмов">
+
+		<title>Бронирование — Anti-Kino</title>
+	</head>
+
+	<body>
+		<section class="ticket-block" id="ticket">
+			<div class="col-md-6 col-md-offset-3">
+				<img src="img/menu-logotype-sm.png">
+
+				<div id="step-1">
+					<h3 class="ticket-heading">Шаг 1. Выбор города, даты и времени.</h3>
+					<p class="ticket-description">Выберите город, дату и время на которые вы хотите забронировать сеанс.</p>
+
+					<div class="input-field">
+						<select class="city-select">
+							<option value disabled selected>Нажмите, чтобы выбрать город</option>
+							<option value="1">Москва</option>
+							<option value="2">Санкт-Петербург</option>
+							<option value="3">Брянск</option>
+							<option value="4">Волгоград</option>
+							<option value="5">Воронеж</option>
+							<option value="6">Екатеринбург</option>
+							<option value="7">Казань</option>
+							<option value="8">Краснодар</option>
+							<option value="9">Оренбург</option>
+							<option value="10">Саратов</option>
+							<option value="11">Ярославль</option>
+							<option value="12">Новосибирск</option>
+							<option value="13">Ростов на Дону</option>
+							<option value="14">Самара</option>
+							<option value="15">Нижный Новгород</option>
+							<option value="16">Челябинск</option>
+							<option value="17">Омск</option>
+							<option value="18">Уфа</option>
+							<option value="19">Красноярск</option>
+							<option value="20">Ставрополь</option>
+						</select>
+					</div>
+
+					<input type="text" class="datepicker" readonly placeholder="Нажмите, чтобы выбрать дату">
+
+					<ul class="ticket-list">
+					    <li class="ticket-button" time="с 14:00 до 16:00">14:00 - 16:00</li>
+						<li class="ticket-button" time="с 15:00 до 17:00">15:00 - 17:00</li>
+						<li class="ticket-button" time="с 16:00 до 18:00">16:00 - 18:00</li>
+						<li class="ticket-button" time="с 17:00 до 19:00">17:00 - 19:00</li>
+						<li class="ticket-button" time="с 18:00 до 20:00">18:00 - 20:00</li>
+						<li class="ticket-button" time="с 19:00 до 21:00">19:00 - 21:00</li>
+						<li class="ticket-button" time="с 20:00 до 22:00">20:00 - 22:00</li>
+						<li class="ticket-button" time="с 21:00 до 23:00">21:00 - 23:00</li>
+						<li class="ticket-button" time="с 22:00 до 00:00">22:00 - 00:00</li>
+						<li class="ticket-button" time="с 23:00 до 01:00">23:00 - 01:00</li>
+						<li class="ticket-button" time="с 00:00 до 02:00">00:00 - 02:00</li>
+						<li class="ticket-button" time="с 01:00 до 03:00">01:00 - 03:00</li>
+					</ul>
+
+					<p class="ticket-subheading">Выбранное время: </p>
+					<a href="ticket.html#" class="continue-button" id="continue-1">Продолжить</a>
+				</div>
+
+				<div id="step-2" style="display: none;">
+					<h3 class="ticket-heading">Шаг 2. Выбор количества участников.</h3>
+					<p class="ticket-description">Выберите сколько человек будут участвовать в одном сеансе.</p>
+					
+					<div class="ticket-members">
+						<i class="fas fa-male active-member"></i>
+						<i class="fas fa-male active-member" members="2"></i>
+						<i class="fas fa-male" members="3"></i>
+						<i class="fas fa-male" members="4"></i>
+					</div>
+
+					<p class="members-subheading">Минимальное количество участников: <b>2</b></p>
+					<a href="ticket.html#" class="continue-button" id="continue-2">Продолжить</a>
+				</div>
+
+				<div id="step-3" style="display: none;">
+					<h3 class="ticket-heading">Шаг 3. Итог бронирования.</h3>
+					<p class="ticket-description">Заполните контактные данные для связи с Вами.</p>
+					
+					<div class="form-group">
+						<input type="text" id="input-name" class="ticket-input" placeholder="Ваше имя">
+					</div>
+
+					<div class="form-group">
+						<input id="input-phone" class="ticket-input" placeholder="Телефон">
+					</div>
+
+					<div class="form-group">
+						<input type="email" id="input-email" class="ticket-input" placeholder="Эл. почта">
+					</div>
+
+					<h3 class="price-subheading">Общая сумма: <b>1399 руб.</b></h3>
+
+					<p>
+						<label>
+							<input type="checkbox" class="filled-in relax-checkbox"/>
+							<span>Аренда +2 часа со скидкой</span>
+						</label>
+					</p>
+
+					<div class="price-notify"><i class="fas fa-exclamation-circle"></i> Цена увеличена по причине проведения сеанса в выходной день.</div>
+
+					<p class="ticket-info">Дата сеанса: <b>18 Июль 2018, Среда</b>
+					<br>Время сеанса: <b>с 16:00 до 17:00</b>
+					<br>Количество участников: <b>3</b></p>
+
+					<a href="ticket.html#" class="continue-button" role="form" id="pay-button">Перейти к оплате</a>
+				</div>
+			</div>
+		</section>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("select").formSelect();
+				$("#input-phone").mask("+7 (999) 999-99-99");
+			});
+		</script>
+	<script type='text/javascript'>
+		(function(){ var widget_id = '7Qf2yBV25K';var d=document;var w=window;function l(){
+		  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+		  s.src = '//code.jivosite.com/script/widget/'+widget_id
+		    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+		  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+		  else{w.addEventListener('load',l,false);}}})();
+		</script>
+	</body>
+</html>

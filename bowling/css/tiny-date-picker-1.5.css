@@ -1,0 +1,200 @@
+.t-datepicker {
+    width: 100%;
+}
+
+.t-datepicker__wrapper {
+    position: relative;
+    display: table;
+    width: 100%;
+}
+
+.t-input.t-datepicker {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    margin-top: 0px;
+}
+
+.t-datepicker__icon {
+	position: absolute;
+    right: 0;
+	margin: auto 0;
+    top: 0;
+    bottom: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 100%;
+	pointer-events: none;
+}
+
+.t-datepicker__icon_bbonly {
+	padding-right: 0px !important;
+}
+
+.t-datepicker::-ms-clear {
+	width : 0;
+  	height: 0;
+}
+
+
+
+.date-picker {
+	position: absolute;
+	padding: 10px;
+    font-size: 1em;
+    color: #000;
+    text-align: center;
+    cursor: default;
+	border: 1px solid #444;
+    border-radius: 2px;
+	margin: 6px 0;
+	background: #fff;
+	box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
+	font-family: Arial, Sans-Serif;
+    z-index: 9999999;
+}
+
+.date-picker .cal-month {
+	margin: 0;
+}
+
+.cal-month {
+    border-collapse: collapse;
+    margin: 0 12px 12px 0;
+}
+.cal-month td {
+    z-index: 0;
+}
+.week-day {
+    font-weight: normal;
+    border-bottom: 1px solid #666;
+    color: #777;
+}
+.previous-month, .next-month, .current-month, .week-day {
+    position: relative;
+    padding: 5px 7px;
+    cursor: default;
+}
+
+.selected-day:before {
+    background-color: #000 !important;
+}
+
+.selected-day {
+	color: #fff !important;
+}
+
+.previous-month, .next-month {
+    opacity: 0.4;
+}
+
+.previous-month.week-end, .next-month.week-end {
+    opacity: 0.4;
+}
+
+.dp-title, .dp-footer {
+    padding: 5px 5px 6px;
+
+    background: #efefef;
+    border-radius: 0 0 2px 2px;
+}
+.dp-title {
+	min-width: 180px;
+    border-radius: 2px 2px 0 0;
+}
+.dp-label {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+	margin: 0 2px -5px;
+}
+
+.dp-title select, .dp-footer select {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.dp-prev, .dp-next {
+	display: block;
+    position: relative;
+    outline: none;
+
+    width: 10px;
+    height: 100%;
+    margin: 0 -3px;
+    text-indent: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: transparent;
+    border: none;
+
+    opacity: .5;
+	float: left;
+}
+.dp-next {
+    float: right;
+}
+.dp-prev:after, .dp-next:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0px;
+	height: 0px;
+	margin: -6px;
+
+	border: 6px solid #000;
+}
+.dp-prev[disabled]:after, .dp-next[disabled]:after {
+	visibility: hidden;
+}
+
+.dp-prev:after {
+	border-color: transparent #000 transparent transparent;
+}
+.dp-next:after {
+	border-color: transparent transparent transparent #000;
+}
+
+.selected-day:before,
+.previous-month:active:before,
+.next-month:active:before,
+.current-month:active:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -14px;
+    width: 28px;
+    height: 28px;
+    box-sizing: border-box;
+    background-color: #bdbdbd;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+@media screen and (min-width: 960px){
+.previous-month:not(.disabled):hover:before,
+.next-month:not(.disabled):hover:before,
+.current-month:not(.disabled):hover:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -14px;
+    width: 28px;
+    height: 28px;
+    box-sizing: border-box;
+    background-color: #bdbdbd;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.dp-prev:hover, .dp-next:hover {
+	opacity: 1;
+}
+}

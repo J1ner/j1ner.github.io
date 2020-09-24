@@ -1,0 +1,261 @@
+@font-face {
+	font-family: Thin;
+	src: url("../fonts/Thin.otf") format("opentype");
+}
+@font-face {
+	font-family: Light;
+	src: url("../fonts/Light.otf") format("opentype");
+}
+@font-face {
+	font-family: Regular;
+	src: url("../fonts/Regular.otf") format("opentype");
+}
+@font-face {
+	font-family: Number;
+	src: url("../fonts/Number.ttf");
+}
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Regular;
+	user-select: none;
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+	background: #CBDCDF;
+}
+form, a {
+	display: contents;
+	text-decoration: none;
+}
+div.wrapper {
+	min-height: 100%;
+	display: flex;
+	background: #CBDCDF;
+}
+div.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div.flex-vertical {
+	display: flex;
+	flex-direction: column;
+}
+div.flex-horizontal {
+	display: flex;
+	flex-direction: row;
+}
+div.flex-space-between {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.text-right {
+	text-align: right !important;
+}
+div.wrapper div.window {
+	height: auto;
+	width: 250px;
+	margin: 15px 10px;
+}
+div.wrapper div.window div.title {
+	height: 80px;
+    background: #E8EFF1;
+    font-size: 25px;
+    color: #7ea0a7;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+div.wrapper div.window div.general {
+	background: #FFFFFF;
+	padding: 15px;
+}
+div.wrapper div.window div.general div.flex-section {
+	justify-content: space-between;
+	height: 70px;
+}
+div.wrapper div.window div.general div.flex-section div.input-block {
+    flex: 1 auto;
+    justify-content: space-evenly;
+}
+div.wrapper div.window div.general div.flex-section div.input-block span {
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 1px;
+	color: #597180;
+	transition: .5s;
+}
+div.wrapper div.window div.general div.flex-section div.input-block input {
+	height: 35px;
+	outline: none;
+	font-size: 17px;
+	font-family: Number;
+	letter-spacing: 1px;
+	font-weight: 700;
+	border: none;
+    width: 100%;
+}
+div.wrapper div.window div.information:after {
+	content: "";
+    position: absolute;
+    left: 0;
+    bottom: -11px;
+    right: 0;
+    background-repeat: repeat;
+    height: 16px;
+    background-size: contain;
+    background-image: url('../images/triagle-down.svg');
+    background-position-x: 5px;
+}
+div.wrapper div.window div.information {
+    height: auto;
+    background: #8CB1B7;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+div.wrapper div.window div.information div {
+	width: 100%;
+}
+div.wrapper div.window div.information div.name {
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-family: Thin;
+	font-size: 13px;
+	letter-spacing: 1px;
+	margin-bottom: 5px;
+}
+div.wrapper div.window div.information div.spans {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 18px;
+}
+div.wrapper div.window div.button {
+	margin-top: 15px;
+	height: 45px;
+    text-transform: uppercase;
+    color: #7ea0a7;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 14px;
+	background: #E8EFF1;
+	position: relative;
+	cursor: pointer;
+}
+div.wrapper div.window div.button:after {
+	content: "";
+    position: absolute;
+    left: 0;
+    top: -11px;
+    right: 0;
+    background-repeat: repeat;
+    height: 16px;
+    background-size: contain;
+    background-image: url('../images/triagle-top.svg');
+    background-position-x: 13px;
+}
+div.wrapper div.window div.logos {
+	height: 65px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+div.wrapper div.window div.logos div {
+	width: 65px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+div.wrapper div.window div.logos div:nth-child(1) {
+	background-image: url('../images/Visa.svg');
+}
+div.wrapper div.window div.logos div:nth-child(2) {
+	background-image: url('../images/Mastercard.svg');
+}
+div.wrapper div.window div.logos div:nth-child(3) {
+	background-image: url('../images/Mir.svg');
+}
+div.wrapper div.window div.small-text {
+	text-align: center;
+	font-size: 10px;
+	color: #637a7e;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+div.wrapper div.window div.order-text {
+	text-align: center;
+	font-size: 14px;
+	color: #637a7e;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 10px 0;
+}
+div.wrapper div.window div.order-text span {
+	user-select: text;
+}
+div.input-error {
+	position: relative;
+}
+div.input-error-inner {
+	position: absolute;
+    bottom: 5px;
+    border-top: 1px solid #e37273;
+    height: 1px;
+    left: 0;
+    right: 0;
+}
+div.order-background {
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	background-size: 200px !important;
+	height: 250px;
+}
+div.order-fail {
+	background-image: url('../images/error.svg') !important;
+}
+div.order-success {
+	background-image: url('../images/success.svg') !important;
+}
+.error-label {
+	color: #e2574c !important;
+}
+.loader {
+	position: absolute;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	padding-top: calc((100vh - 200px) / 2);
+	background-color: #fff;
+	display: none;
+}
+.loader p {
+	text-align: center;
+	font-size: 13px;
+	color: #637a7e;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+div.wrapper .heading {
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+	color: #597180;
+}
+div.wrapper .sub-heading {
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 1px;
+}

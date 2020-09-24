@@ -1,0 +1,247 @@
+* {
+	padding: 0;
+	margin: 0;
+	outline: none !important;
+	scroll-behavior: smooth;
+	transition: 0.3s all;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+@media (min-width: 992px) {
+	.animate {
+		animation-duration: 0.3s;
+		-webkit-animation-duration: 0.3s;
+		animation-fill-mode: both;
+		-webkit-animation-fill-mode: both;
+	}
+}
+
+@keyframes slideIn {
+	0% {
+		transform: translateY(1rem);
+		opacity: 0;
+	}
+	100% {
+		transform:translateY(0rem);
+		opacity: 1;
+	}
+	0% {
+		transform: translateY(1rem);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes slideIn {
+	0% {
+		-webkit-opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		-webkit-opacity: 1;
+	}
+	0% {
+		-webkit-transform: translateY(1rem);
+		-webkit-opacity: 0;
+	}
+}
+
+.slideIn {
+	-webkit-animation-name: slideIn;
+	animation-name: slideIn;
+}
+
+.gradbutton {
+	border: 0 !important;
+	background-color: #002878;
+	background-image: linear-gradient(45deg, #009CFF 0%, #00F0F4 50%, #009CFF 100%);
+	background-position: 100% 0;
+	background-size: 200% 200%;
+	color: white;
+	border-radius: 50px;
+	padding: 12px 48px;
+	font-family: 'Nunito', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	margin-right: 3px;
+	margin-left: 3px;
+	box-shadow: 0 0 32px 0 rgba(0, 40, 120, .35);
+	transition: all 0.5s ease;
+}
+
+.gradbutton1 {
+	margin-top: 10px;
+	border: 0 !important;
+	background-color: #002878;
+	background-image: linear-gradient(45deg, #d13640 0%, #ff3737 50%, #d13640 100%);
+	background-position: 100% 0;
+	background-size: 200% 200%;
+	color: white;
+	border-radius: 50px;
+	padding: 12px 48px;
+	font-family: 'Nunito', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	margin-right: 3px;
+	margin-left: 3px;
+	box-shadow: 0 0 32px 0 rgba(234, 38, 38, 0.35);
+	transition: all 0.5s ease;
+}
+
+.gradbutton1:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.gradbutton2 {
+	margin-top: 10px;
+	border: 0 !important;
+	background-color: #002878;
+	background-image: linear-gradient(45deg, #d13640 0%, #ff3737 50%, #d13640 100%);
+	background-position: 100% 0;
+	background-size: 200% 200%;
+	color: white;
+	border-radius: 50px;
+	padding: 12px 36px;
+	font-family: 'Nunito', sans-serif;
+	font-size: 11px;
+	font-weight: 600;
+	text-decoration: none;
+	box-shadow: 0 0 32px 0 rgba(234, 38, 38, 0.35);
+	transition: all 0.5s ease;
+}
+
+.gradbutton2:hover {
+	color: white;
+	text-decoration: none;
+}
+
+@media (max-width: 600px) {
+	#scamlist.gradbutton {
+		font-size: 10px;
+		padding: 4px 16px;
+	}
+}
+
+.glowin {
+	box-shadow: 0 0 20px #0003 !important;
+}
+
+
+@-webkit-keyframes AnimationName {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+
+.form-control {
+	border: 0px solid #ced4da !important;
+	border-radius: 15px !important;
+}
+
+.bggrad {
+	background: linear-gradient(90deg, #009cff, #6600f4, #fd00ff);
+	background-size: 600% 600%;
+
+	-webkit-animation: AnimationName 30s ease infinite;
+	-moz-animation: AnimationName 30s ease infinite;
+	animation: AnimationName 30s ease infinite;
+}
+
+.progress {
+	background-color: #474747 !important;
+}
+
+.card {
+	box-shadow: 0 0 20px #0003 !important;
+	border-radius: 20px !important;
+}
+
+.gradbutton:hover {
+	box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
+	background-position: 0 0;
+}
+
+.numb {
+	-moz-appearance: textfield;
+}
+
+.numb::-webkit-inner-spin-button {
+	display: none;
+}
+.numb::-webkit-outer-spin-button,
+.numb::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+  input, input:before, input:after {
+      -webkit-user-select: initial;
+      -khtml-user-select: initial;
+      -moz-user-select: initial;
+      -ms-user-select: initial;
+      user-select: initial;
+     } 
+
+body {
+  	width: 100%;
+  	height: 100%;
+	overflow-x: hidden;
+	background: #f5f5f5 !important;
+}
+
+.main {
+	padding: 10px;
+}
+
+.chat {
+	padding: 10px;
+	position: absolute;
+}
+
+.errorbox {
+	width: 300px;
+	height: 200px;
+        position:absolute; /*it can be fixed too*/
+        left:0; right:0;
+        top:0; bottom:0;
+        margin:auto;
+}
+
+.errorbox input[type=password] {
+	border: none;
+}
+
+.errorbox button {
+	margin-top: 5px;
+}
+
+nav .btn-group .dropdown-menu {
+  background-color: #343a40;
+}
+
+nav .btn-group .dropdown-menu .dropdown-item {
+  color: rgba(255,255,255,.5);
+}
+
+nav .btn-group .dropdown-menu .dropdown-divider {
+  border-top: 1px solid rgba(50, 50, 50, 0.9);
+}
+
+nav .btn-group .dropdown-menu .dropdown-item:hover,
+nav .btn-group .dropdown-menu .dropdown-item:focus {
+	background-color: #343a40;
+  	color: rgba(255,255,255,.75);
+}
